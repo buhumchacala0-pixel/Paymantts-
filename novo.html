@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PAYMANTTS</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', sans-serif;
+        }
+        body {
+            background-color: #0c0c0c;
+            color: #ffffff;
+        }
+        header {
+            position: fixed;
+            width: 100%;
+            z-index: 100;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 18px 50px;
+            background: rgba(0,0,0,0.85);
+        }
+        .logo {
+            font-size: 30px;
+            font-weight: 900;
+            color: #f29122;
+        }
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 14px;
+            font-weight: 600;
+        }
+        .banner-principal {
+            width: 100%;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            padding-top: 80px;
+            background-color: #000000;
+        }
+        .logo-banner {
+            width: 220px;
+            height: 220px;
+            margin-bottom: 30px;
+        }
+        .banner-principal h1 {
+            font-size: 64px;
+            margin-bottom: 20px;
+            color: #fff;
+        }
+        .banner-principal p {
+            font-size: 22px;
+            max-width: 800px;
+            margin-bottom: 35px;
+        }
+        .botao {
+            padding: 16px 32px;
+            background: #f29122;
+            color: #000;
+            font-weight: bold;
+            border-radius: 8px;
+            text-decoration: none;
+            font-size: 18px;
+        }
+        .secao-jogos {
+            padding: 80px 50px;
+        }
+        .secao-jogos h2 {
+            text-align: center;
+            font-size: 40px;
+            margin-bottom: 50px;
+            color: #f29122;
+        }
+        .grade-jogos {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+            gap: 25px;
+        }
+        .card-jogo {
+            background: #1a1a1a;
+            border-radius: 14px;
+            overflow: hidden;
+        }
+        .caixa-imagem {
+            width: 100%;
+            height: 260px;
+            display:flex;
+            align-items:center;
+            justify-content:center;
+            font-weight:bold;
+            font-size:26px;
+            text-align:center;
+            padding:15px;
+        }
+        .tiger {
+            background: linear-gradient(45deg,#ff7b00,#ffcc00,#ff3377);
+            color:#000;
+        }
+        .zeus {
+            background: linear-gradient(45deg,#1166ff,#ffffff,#ffdd00);
+            color:#000;
+        }
+        .card-jogo .texto {
+            padding: 18px;
+            text-align: center;
+        }
+        .card-jogo h3 {
+            margin-bottom: 10px;
+            color: #f29122;
+        }
+        footer {
+            text-align: center;
+            padding: 40px;
+            background: #000000;
+            margin-top: 30px;
+        }
+
+        @media (max-width: 768px) {
+            header {
+                flex-direction: column;
+                padding: 15px;
+            }
+            nav {
+                margin-top: 10px;
+            }
+            nav a {
+                margin: 0 8px;
+                font-size: 14px;
+            }
+            .banner-principal h1 {
+                font-size: 42px;
+            }
+            .banner-principal p {
+                font-size: 18px;
+            }
+            .secao-jogos {
+                padding: 40px 20px;
+            }
+            .grade-jogos {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">PAYMANTTS</div>
+        <nav>
+            <a href="#">Jogos</a>
+            <a href="#">Cassino Ao Vivo</a>
+            <a href="#">Sobre Nós</a>
+            <a href="#">Contato</a>
+        </nav>
+    </header>
+
+    <section class="banner-principal">
+        <svg class="logo-banner" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
+            <path fill="#ffffff" d="M256 32L416 128V384L256 480L96 384V128Z"/>
+            <path fill="#000000" d="M160 192C200 170 240 190 256 230C272 190 312 170 352 192C310 230 280 280 280 340H232C232 280 202 230 160 192Z"/>
+        </svg>
+        <h1>PAYMANTTS</h1>
+        <p>Provedor líder de conteúdo de jogos, slots premiados, cassino ao vivo e muito mais, disponível em todos os mercados.</p>
+        <a class="botao" href="#">VER NOSSOS JOGOS</a>
+    </section>
+
+    <section class="secao-jogos">
+        <h2>NOSSO PORTFÓLIO</h2>
+        <div class="grade-jogos">
+            <div class="card-jogo">
+                <div class="caixa-imagem tiger">🐯 FORTUNE TIGER</div>
+                <div class="texto">
+                    <h3>FORTUNE TIGER</h3>
+                    <p>O famoso jogo do tigre!</p>
+                </div>
+            </div>
+            <div class="card-jogo">
+                <div class="caixa-imagem zeus">⚡ ZEUS III</div>
+                <div class="texto">
+                    <h3>ZEUS III</h3>
+                    <p>Relâmpagos e grandes vitórias</p>
+                </div>
+            </div>
+            <div class="card-jogo">
+                <div class="caixa-imagem" style="background:#222; color:#fff;">🎰 Jogo 03</div>
+                <div class="texto">
+                    <h3>Jogo 03</h3>
+                    <p>Cassino ao vivo</p>
+                </div>
+            </div>
+            <div class="card-jogo">
+                <div class="caixa-imagem" style="background:#222; color:#fff;">🎲 Jogo 04</div>
+                <div class="texto">
+                    <h3>Jogo 04</h3>
+                    <p>Jogo de bônus</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        © 2026 PAYMANTTS — Todos os direitos reservados
+    </footer>
+</body>
+</html>
